@@ -21,6 +21,9 @@ function App() {
                 });
                 setMovies(transformedData);
             })
+            .catch((error)=>{
+                console.error('Error:', error);
+            })
     }
 
     return (
